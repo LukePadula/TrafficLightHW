@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.outer {
+  width: 20%;
+  margin: 5vh auto 0;
+  border: 1px solid #000;
+  padding: 2.5vw;
+  z-index: 200;
+  border-radius: 5px;
+}
+
+.inner {
+  background-color: #000;
+  padding: 2.5vw;
+  border-radius: 5px;
+}
+
+.light {
+  background-color: #ccc;
+  width: 10vw;
+  height: 10vw;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.light:last-child {
+  margin-bottom: 0;
+}
+
+.stop.on {
+  background-color: #f00;
+}
+
+.caution.on {
+  background-color: #ff0;
+}
+
+.go.on {
+  background-color: #0f0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #eee;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer button {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+  margin-inline-end: 5px;
+}
+
+button.stop {
+  background-color: red;
+  color: white;
+}
+
+button.caution {
+  background-color: yellow;
+}
+
+button.go {
+  background-color: green;
+  color: white;
+}
